@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bby0rnxx2xexm"]
+
+[node name="Attt17" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextEdit" type="TextEdit" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 105.0
+offset_top = 74.0
+offset_right = 197.0
+offset_bottom = 207.0
+
+[node name="Label" type="Label" parent="Control/TextEdit"]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 191.0
+offset_top = 154.0
+offset_right = 492.0
+offset_bottom = 314.0
+
+[node name="Button" type="Button" parent="Control/TextEdit/Label"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.927
+anchor_top = -1.344
+anchor_right = -0.927
+anchor_bottom = -1.344
+offset_left = 454.027
+offset_top = 219.04
+offset_right = 602.027
+offset_bottom = 337.04

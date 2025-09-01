@@ -15,48 +15,49 @@ script = ExtResource("1_x653t")
 layout_mode = 0
 offset_left = 223.0
 offset_top = 3.0
-offset_right = 314.0
+offset_right = 334.0
 offset_bottom = 87.0
 placeholder_text = "insira"
 
 [node name="TextEdit2" type="TextEdit" parent="."]
-offset_left = 217.0
-offset_top = 110.0
-offset_right = 323.0
-offset_bottom = 188.0
+layout_mode = 0
+offset_left = 223.0
+offset_top = 96.0
+offset_right = 334.0
+offset_bottom = 174.0
 placeholder_text = "insira"
 
 [node name="OptionButton" type="OptionButton" parent="."]
 layout_mode = 0
-offset_left = 526.0
-offset_top = 16.0
-offset_right = 656.0
-offset_bottom = 94.0
+offset_left = 398.0
+offset_top = 4.0
+offset_right = 534.0
+offset_bottom = 77.0
 item_count = 4
-popup/item_0/text = "somar "
+popup/item_0/text = "adição "
 popup/item_0/id = 0
-popup/item_1/text = "menos"
+popup/item_1/text = "subtração"
 popup/item_1/id = 1
-popup/item_2/text = "multi"
+popup/item_2/text = "multiplicação"
 popup/item_2/id = 2
-popup/item_3/text = "divi"
+popup/item_3/text = "divisão"
 popup/item_3/id = 3
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 356.0
-offset_top = 222.0
-offset_right = 440.0
-offset_bottom = 293.0
-text = "oii"
+offset_left = 327.0
+offset_top = 198.0
+offset_right = 405.0
+offset_bottom = 226.0
+text = "Resultado"
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 489.0
-offset_top = 136.0
-offset_right = 558.0
-offset_bottom = 213.0
-text = "cli
+offset_left = 402.0
+offset_top = 96.0
+offset_right = 536.0
+offset_bottom = 173.0
+text = "Calcular
 "
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

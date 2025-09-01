@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk1u282gklc7h"]
+
+[ext_resource type="Script" uid="uid://cptyu5xycyi8h" path="res://control.gd" id="1_g18wn"]
+[ext_resource type="Texture2D" uid="uid://bxg48avka5gp1" path="res://v856-kul-43-removebg-preview.png" id="2_n280r"]
+[ext_resource type="Script" uid="uid://c4b5hjhe7imig" path="res://atividade 18/progress_bar.gd" id="3_3ay8p"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g18wn")
+
+[node name="ProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -250.0
+offset_right = 250.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+fill_mode = 4
+radial_initial_angle = 90.0
+nine_patch_stretch = true
+texture_under = ExtResource("2_n280r")
+texture_progress = ExtResource("2_n280r")
+tint_under = Color(0, 0, 0, 1)
+script = ExtResource("3_3ay8p")
+
+[node name="Label" type="Label" parent="ProgressBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.5
+offset_top = -11.5
+offset_right = 30.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "100%"
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
